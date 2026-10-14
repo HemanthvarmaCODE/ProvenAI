@@ -1,0 +1,474 @@
+{
+  "timestamp": "2026-10-12 15:27:27",
+  "environment": {
+    "python_version": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+    "fastapi": "0.141+",
+    "opencv": "5.0.0",
+    "numpy": "2.5.1"
+  },
+  "endpoints": {
+    "root": {
+      "status": 200,
+      "body": {
+        "message": "Welcome to ProvenAI API",
+        "docs": "/docs"
+      }
+    },
+    "health": {
+      "status": 200,
+      "body": {
+        "status": "ok"
+      }
+    },
+    "register": {
+      "status": 200,
+      "token_type": "bearer"
+    },
+    "login": {
+      "status": 200,
+      "access_token_received": true
+    },
+    "profile": {
+      "id": 1,
+      "username": "researcher_lead",
+      "email": "lead@provenai.org",
+      "full_name": "Dr. Lead Researcher",
+      "is_admin": false
+    },
+    "upload": {
+      "filename": "c8bd038e-4649-491c-a204-b3086911c624.png",
+      "path": "./storage/uploads\\c8bd038e-4649-491c-a204-b3086911c624.png",
+      "original_filename": "benchmark_test_art.png"
+    }
+  },
+  "embedding": {
+    "psnr_db": 48.041103714896565,
+    "ssim": 0.9901617931201817,
+    "embedding_time_s": 0.4044356346130371,
+    "measured_wall_time_s": 0.6851387999486178,
+    "watermarked_path": "./storage/watermarked\\wm_a0d91804-9892-4e7d-a957-265ff6773a6f.png",
+    "image_uuid": "a0d91804-9892-4e7d-a957-265ff6773a6f"
+  },
+  "verification": {
+    "is_authentic": true,
+    "is_tampered": false,
+    "confidence_score": 0.97811359167099,
+    "nc_score": 0.97811359167099,
+    "ber_score": 0.0,
+    "provenance": {
+      "owner": "Provenance AI Consortium",
+      "model": "Stable Diffusion XL v1.0",
+      "prompt_id": "SDXL-PROMPT-98242",
+      "image_uuid": "a0d91804-9892-4e7d-a957-265ff6773a6f",
+      "timestamp": "2026-10-12T09:57:28.038346+00:00"
+    },
+    "verification_wall_time_s": 0.24576220009475946
+  },
+  "attacks": [
+    {
+      "label": "JPEG Compression (Q=90)",
+      "attack_type": "jpeg",
+      "params": {
+        "quality": 90
+      },
+      "nc_after": 0.9842814207077026,
+      "ber_after": 0.0,
+      "psnr_after": 46.23130976847578,
+      "ssim_after": 0.9825189355468743,
+      "watermark_survived": true
+    },
+    {
+      "label": "JPEG Compression (Q=70)",
+      "attack_type": "jpeg",
+      "params": {
+        "quality": 70
+      },
+      "nc_after": 0.9671216607093811,
+      "ber_after": 0.0054931640625,
+      "psnr_after": 43.916535364024696,
+      "ssim_after": 0.9732806564974178,
+      "watermark_survived": true
+    },
+    {
+      "label": "JPEG Compression (Q=50)",
+      "attack_type": "jpeg",
+      "params": {
+        "quality": 50
+      },
+      "nc_after": 0.9471467137336731,
+      "ber_after": 0.01959228515625,
+      "psnr_after": 41.85123427614162,
+      "ssim_after": 0.9637997468075098,
+      "watermark_survived": true
+    },
+    {
+      "label": "JPEG Compression (Q=30)",
+      "attack_type": "jpeg",
+      "params": {
+        "quality": 30
+      },
+      "nc_after": 0.9083297848701477,
+      "ber_after": 0.05316162109375,
+      "psnr_after": 38.896207187461,
+      "ssim_after": 0.9383503867339416,
+      "watermark_survived": true
+    },
+    {
+      "label": "Gaussian Noise (std=5)",
+      "attack_type": "gaussian_noise",
+      "params": {
+        "mean": 0,
+        "std": 5
+      },
+      "nc_after": 0.9923003911972046,
+      "ber_after": 0.00079345703125,
+      "psnr_after": 34.49443356651646,
+      "ssim_after": 0.7824951886766754,
+      "watermark_survived": true
+    },
+    {
+      "label": "Gaussian Noise (std=10)",
+      "attack_type": "gaussian_noise",
+      "params": {
+        "mean": 0,
+        "std": 10
+      },
+      "nc_after": 0.9900710582733154,
+      "ber_after": 0.001220703125,
+      "psnr_after": 28.683807588742237,
+      "ssim_after": 0.48965774029421727,
+      "watermark_survived": true
+    },
+    {
+      "label": "Gaussian Noise (std=20)",
+      "attack_type": "gaussian_noise",
+      "params": {
+        "mean": 0,
+        "std": 20
+      },
+      "nc_after": 0.9835905432701111,
+      "ber_after": 0.00250244140625,
+      "psnr_after": 22.973968303970512,
+      "ssim_after": 0.20822836956023674,
+      "watermark_survived": true
+    },
+    {
+      "label": "Salt & Pepper (1%)",
+      "attack_type": "salt_pepper",
+      "params": {
+        "amount": 0.01
+      },
+      "nc_after": 0.982221245765686,
+      "ber_after": 0.002685546875,
+      "psnr_after": 24.283502568222293,
+      "ssim_after": 0.7668605378877148,
+      "watermark_survived": true
+    },
+    {
+      "label": "Salt & Pepper (3%)",
+      "attack_type": "salt_pepper",
+      "params": {
+        "amount": 0.03
+      },
+      "nc_after": 0.9778334498405457,
+      "ber_after": 0.00372314453125,
+      "psnr_after": 19.646811966702245,
+      "ssim_after": 0.532815338265561,
+      "watermark_survived": true
+    },
+    {
+      "label": "Gaussian Blur (3x3)",
+      "attack_type": "blur",
+      "params": {
+        "kernel_size": 3
+      },
+      "nc_after": 0.9727404713630676,
+      "ber_after": 0.011962890625,
+      "psnr_after": 51.95670503282898,
+      "ssim_after": 0.9950832485141848,
+      "watermark_survived": true
+    },
+    {
+      "label": "Gaussian Blur (5x5)",
+      "attack_type": "blur",
+      "params": {
+        "kernel_size": 5
+      },
+      "nc_after": 0.9699475169181824,
+      "ber_after": 0.089111328125,
+      "psnr_after": 50.49195167875694,
+      "ssim_after": 0.9931328788514939,
+      "watermark_survived": true
+    },
+    {
+      "label": "Rotation (2 deg)",
+      "attack_type": "rotation",
+      "params": {
+        "angle": 2
+      },
+      "nc_after": 0.4177247881889343,
+      "ber_after": 0.59130859375,
+      "psnr_after": 28.60106915145488,
+      "ssim_after": 0.9505520365413288,
+      "watermark_survived": false
+    },
+    {
+      "label": "Rotation (5 deg)",
+      "attack_type": "rotation",
+      "params": {
+        "angle": 5
+      },
+      "nc_after": 0.5962491035461426,
+      "ber_after": 0.5814208984375,
+      "psnr_after": 20.795299912886527,
+      "ssim_after": 0.8688920370187282,
+      "watermark_survived": false
+    },
+    {
+      "label": "Scaling (0.75x)",
+      "attack_type": "scaling",
+      "params": {
+        "scale": 0.75
+      },
+      "nc_after": 0.9741026163101196,
+      "ber_after": 0.0009765625,
+      "psnr_after": 52.20195051200449,
+      "ssim_after": 0.9953435573682562,
+      "watermark_survived": true
+    },
+    {
+      "label": "Scaling (0.50x)",
+      "attack_type": "scaling",
+      "params": {
+        "scale": 0.5
+      },
+      "nc_after": 0.9761455655097961,
+      "ber_after": 0.0006103515625,
+      "psnr_after": 50.73926837820949,
+      "ssim_after": 0.9937205151677002,
+      "watermark_survived": true
+    },
+    {
+      "label": "Cropping (5% border)",
+      "attack_type": "cropping",
+      "params": {
+        "ratio": 0.05
+      },
+      "nc_after": 0.9746004343032837,
+      "ber_after": 0.00030517578125,
+      "psnr_after": 11.279069395134261,
+      "ssim_after": 0.8303970578126852,
+      "watermark_survived": true
+    },
+    {
+      "label": "Cropping (10% border)",
+      "attack_type": "cropping",
+      "params": {
+        "ratio": 0.1
+      },
+      "nc_after": 0.9672075510025024,
+      "ber_after": 0.0037841796875,
+      "psnr_after": 8.319119708433972,
+      "ssim_after": 0.6732839141999502,
+      "watermark_survived": true
+    },
+    {
+      "label": "Brightness (+20%)",
+      "attack_type": "brightness",
+      "params": {
+        "factor": 1.2
+      },
+      "nc_after": 0.7622276544570923,
+      "ber_after": 0.18792724609375,
+      "psnr_after": 21.404788615846865,
+      "ssim_after": 0.9598348180005081,
+      "watermark_survived": false
+    },
+    {
+      "label": "Brightness (-20%)",
+      "attack_type": "brightness",
+      "params": {
+        "factor": 0.8
+      },
+      "nc_after": 0.9742705225944519,
+      "ber_after": 0.000244140625,
+      "psnr_after": 17.881828097662613,
+      "ssim_after": 0.9661099157945947,
+      "watermark_survived": true
+    },
+    {
+      "label": "Contrast (+20%)",
+      "attack_type": "contrast",
+      "params": {
+        "factor": 1.2
+      },
+      "nc_after": 0.8432886004447937,
+      "ber_after": 0.10345458984375,
+      "psnr_after": 26.660811353216012,
+      "ssim_after": 0.8457096308484071,
+      "watermark_survived": true
+    },
+    {
+      "label": "Contrast (-20%)",
+      "attack_type": "contrast",
+      "params": {
+        "factor": 0.8
+      },
+      "nc_after": 0.9742195010185242,
+      "ber_after": 0.000244140625,
+      "psnr_after": 22.99670410839445,
+      "ssim_after": 0.8633542799241455,
+      "watermark_survived": true
+    }
+  ],
+  "dashboard": {
+    "user_summary": {
+      "total_images": 1,
+      "total_verified": 1,
+      "tampered_images": 0,
+      "authentic_images": 1,
+      "recent_uploads": [
+        {
+          "watermarked_path": "./storage/watermarked\\wm_a0d91804-9892-4e7d-a957-265ff6773a6f.png",
+          "user_id": 1,
+          "original_filename": "benchmark_test_art.png",
+          "metadata_encrypted": "lsBcemmqxVvyMsIKHLTyc+iSdIGa/iuoYQGDXOVg3SooFsqyj9nQ7boVzynnn6TM4FGNHyZELV+2gR7HCSq6iodyJ3USONvgIXqJ4m+c8/kRf32mWLJSWj7z/i4C30WcJXd1MzRxqLC946dfQKlzRVnnbq7iFDhoPfOaqnmsxLYAxKYB+0PXMtGUbGN+2Vjmv/6AqblaItSWVwDa1ukWchH82BS/54l1Ivx6eMALDn6zHkur8TPPvYsd4J7rfyS07LdIJ1AiogBE8vr7BaJgJveSkHgHWMOyx6m2V4DXDZBovO3Vjr8aH1BOs11IlOMUBF+E9GCPMrQCbkt3m61j5rBAQZtBjto6lIGWzTUAn4KwFHhHBjhzwZAilibLVDJJhMyvQTy0qo58c6ewWCIu6HJ3Wuj5XybOU+qmyghd+gJDSzeCgRv6Pl50NDBllD+tWk0bK18xTtp2r4dud5G5+7mTg55+kIiBnnkA3GMpU3YqylhV67fkZvd07z+LC5WelWtL2FUhQT41GpxaBUKJ",
+          "image_uuid": "a0d91804-9892-4e7d-a957-265ff6773a6f",
+          "ai_model": "Stable Diffusion XL v1.0",
+          "psnr": 48.041103714896565,
+          "embedding_time": 0.4044356346130371,
+          "created_at": "2026-10-12T09:57:28",
+          "file_path": "./storage/uploads/benchmark_test_art.png",
+          "id": 1,
+          "keys_path": "./storage/keys\\keys_a0d91804-9892-4e7d-a957-265ff6773a6f.npz",
+          "sha256_hash": "45866be9d26492712a98e4dbcb5b18633036e18dab3bc6237b881ab59ddf990b",
+          "owner_name": "Provenance AI Consortium",
+          "prompt_id": "SDXL-PROMPT-98242",
+          "ssim": 0.9901617931201817,
+          "extraction_time": 0.19999146461486816
+        }
+      ]
+    },
+    "aggregated_stats": {
+      "stats_by_attack": {
+        "jpeg": {
+          "count": 4,
+          "psnr_sum": 170.89528659610312,
+          "ssim_sum": 3.8579497255857436,
+          "nc_sum": 3.8068795800209045,
+          "ber_sum": 0.0782470703125,
+          "survived": 4,
+          "avg_psnr": 42.72382164902578,
+          "avg_ssim": 0.9644874313964359,
+          "avg_nc": 0.9517198950052261,
+          "avg_ber": 0.019561767578125,
+          "survival_rate": 1.0
+        },
+        "gaussian_noise": {
+          "count": 3,
+          "psnr_sum": 86.15220945922921,
+          "ssim_sum": 1.4803812985311295,
+          "nc_sum": 2.965961992740631,
+          "ber_sum": 0.0045166015625,
+          "survived": 3,
+          "avg_psnr": 28.717403153076404,
+          "avg_ssim": 0.49346043284370983,
+          "avg_nc": 0.9886539975802103,
+          "avg_ber": 0.0015055338541666667,
+          "survival_rate": 1.0
+        },
+        "salt_pepper": {
+          "count": 2,
+          "psnr_sum": 43.930314534924534,
+          "ssim_sum": 1.2996758761532758,
+          "nc_sum": 1.9600546956062317,
+          "ber_sum": 0.00640869140625,
+          "survived": 2,
+          "avg_psnr": 21.965157267462267,
+          "avg_ssim": 0.6498379380766379,
+          "avg_nc": 0.9800273478031158,
+          "avg_ber": 0.003204345703125,
+          "survival_rate": 1.0
+        },
+        "blur": {
+          "count": 2,
+          "psnr_sum": 102.44865671158593,
+          "ssim_sum": 1.9882161273656789,
+          "nc_sum": 1.94268798828125,
+          "ber_sum": 0.10107421875,
+          "survived": 2,
+          "avg_psnr": 51.22432835579296,
+          "avg_ssim": 0.9941080636828394,
+          "avg_nc": 0.971343994140625,
+          "avg_ber": 0.050537109375,
+          "survival_rate": 1.0
+        },
+        "rotation": {
+          "count": 2,
+          "psnr_sum": 49.39636906434141,
+          "ssim_sum": 1.819444073560057,
+          "nc_sum": 1.013973891735077,
+          "ber_sum": 1.1727294921875,
+          "survived": 0,
+          "avg_psnr": 24.698184532170703,
+          "avg_ssim": 0.9097220367800285,
+          "avg_nc": 0.5069869458675385,
+          "avg_ber": 0.58636474609375,
+          "survival_rate": 0.0
+        },
+        "scaling": {
+          "count": 2,
+          "psnr_sum": 102.94121889021397,
+          "ssim_sum": 1.9890640725359563,
+          "nc_sum": 1.9502481818199158,
+          "ber_sum": 0.0015869140625,
+          "survived": 2,
+          "avg_psnr": 51.47060944510699,
+          "avg_ssim": 0.9945320362679781,
+          "avg_nc": 0.9751240909099579,
+          "avg_ber": 0.00079345703125,
+          "survival_rate": 1.0
+        },
+        "cropping": {
+          "count": 2,
+          "psnr_sum": 19.59818910356823,
+          "ssim_sum": 1.5036809720126354,
+          "nc_sum": 1.9418079853057861,
+          "ber_sum": 0.00408935546875,
+          "survived": 2,
+          "avg_psnr": 9.799094551784115,
+          "avg_ssim": 0.7518404860063177,
+          "avg_nc": 0.9709039926528931,
+          "avg_ber": 0.002044677734375,
+          "survival_rate": 1.0
+        },
+        "brightness": {
+          "count": 2,
+          "psnr_sum": 39.286616713509474,
+          "ssim_sum": 1.9259447337951028,
+          "nc_sum": 1.7364981770515442,
+          "ber_sum": 0.18817138671875,
+          "survived": 1,
+          "avg_psnr": 19.643308356754737,
+          "avg_ssim": 0.9629723668975514,
+          "avg_nc": 0.8682490885257721,
+          "avg_ber": 0.094085693359375,
+          "survival_rate": 0.5
+        },
+        "contrast": {
+          "count": 2,
+          "psnr_sum": 49.65751546161046,
+          "ssim_sum": 1.7090639107725525,
+          "nc_sum": 1.8175081014633179,
+          "ber_sum": 0.10369873046875,
+          "survived": 2,
+          "avg_psnr": 24.82875773080523,
+          "avg_ssim": 0.8545319553862762,
+          "avg_nc": 0.9087540507316589,
+          "avg_ber": 0.051849365234375,
+          "survival_rate": 1.0
+        }
+      }
+    }
+  }
+}

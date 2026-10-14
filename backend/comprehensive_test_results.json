@@ -1,0 +1,365 @@
+﻿{
+    "POST /api/upload":  {
+                             "filename":  "517c253a-4824-4977-960c-e2d5740e67ce.png",
+                             "path":  "./storage/uploads\\517c253a-4824-4977-960c-e2d5740e67ce.png",
+                             "original_filename":  "test_image.png"
+                         },
+    "GET /api/statistics":  {
+                                "stats_by_attack":  {
+                                                        "jpeg":  {
+                                                                     "count":  1,
+                                                                     "psnr_sum":  11.833835114181177,
+                                                                     "ssim_sum":  0.48224976689336224,
+                                                                     "nc_sum":  0.9637161493301392,
+                                                                     "ber_sum":  0.0006103515625,
+                                                                     "survived":  1,
+                                                                     "avg_psnr":  11.833835114181177,
+                                                                     "avg_ssim":  0.48224976689336224,
+                                                                     "avg_nc":  0.9637161493301392,
+                                                                     "avg_ber":  0.0006103515625,
+                                                                     "survival_rate":  1.0
+                                                                 },
+                                                        "gaussian_noise":  {
+                                                                               "count":  1,
+                                                                               "psnr_sum":  28.307750517260494,
+                                                                               "ssim_sum":  0.9910302458640761,
+                                                                               "nc_sum":  0.9637901186943054,
+                                                                               "ber_sum":  0.0003662109375,
+                                                                               "survived":  1,
+                                                                               "avg_psnr":  28.307750517260494,
+                                                                               "avg_ssim":  0.9910302458640761,
+                                                                               "avg_nc":  0.9637901186943054,
+                                                                               "avg_ber":  0.0003662109375,
+                                                                               "survival_rate":  1.0
+                                                                           },
+                                                        "salt_pepper":  {
+                                                                            "count":  1,
+                                                                            "psnr_sum":  21.78548926464993,
+                                                                            "ssim_sum":  0.9614966109323312,
+                                                                            "nc_sum":  0.9639872312545776,
+                                                                            "ber_sum":  0.00067138671875,
+                                                                            "survived":  1,
+                                                                            "avg_psnr":  21.78548926464993,
+                                                                            "avg_ssim":  0.9614966109323312,
+                                                                            "avg_nc":  0.9639872312545776,
+                                                                            "avg_ber":  0.00067138671875,
+                                                                            "survival_rate":  1.0
+                                                                        },
+                                                        "rotation":  {
+                                                                         "count":  1,
+                                                                         "psnr_sum":  8.41504342430721,
+                                                                         "ssim_sum":  0.009159464563890348,
+                                                                         "nc_sum":  0.9621885418891907,
+                                                                         "ber_sum":  0.0003662109375,
+                                                                         "survived":  1,
+                                                                         "avg_psnr":  8.41504342430721,
+                                                                         "avg_ssim":  0.009159464563890348,
+                                                                         "avg_nc":  0.9621885418891907,
+                                                                         "avg_ber":  0.0003662109375,
+                                                                         "survival_rate":  1.0
+                                                                     },
+                                                        "scaling":  {
+                                                                        "count":  1,
+                                                                        "psnr_sum":  11.78380494064579,
+                                                                        "ssim_sum":  0.31007691405046256,
+                                                                        "nc_sum":  0.9622043371200562,
+                                                                        "ber_sum":  0.00689697265625,
+                                                                        "survived":  1,
+                                                                        "avg_psnr":  11.78380494064579,
+                                                                        "avg_ssim":  0.31007691405046256,
+                                                                        "avg_nc":  0.9622043371200562,
+                                                                        "avg_ber":  0.00689697265625,
+                                                                        "survival_rate":  1.0
+                                                                    },
+                                                        "cropping":  {
+                                                                         "count":  1,
+                                                                         "psnr_sum":  9.275081992842898,
+                                                                         "ssim_sum":  0.6518990556989743,
+                                                                         "nc_sum":  0.9412944316864014,
+                                                                         "ber_sum":  0.01019287109375,
+                                                                         "survived":  1,
+                                                                         "avg_psnr":  9.275081992842898,
+                                                                         "avg_ssim":  0.6518990556989743,
+                                                                         "avg_nc":  0.9412944316864014,
+                                                                         "avg_ber":  0.01019287109375,
+                                                                         "survival_rate":  1.0
+                                                                     },
+                                                        "brightness":  {
+                                                                           "count":  1,
+                                                                           "psnr_sum":  17.600862644114137,
+                                                                           "ssim_sum":  0.9563675594582207,
+                                                                           "nc_sum":  0.9660578370094299,
+                                                                           "ber_sum":  0.001220703125,
+                                                                           "survived":  1,
+                                                                           "avg_psnr":  17.600862644114137,
+                                                                           "avg_ssim":  0.9563675594582207,
+                                                                           "avg_nc":  0.9660578370094299,
+                                                                           "avg_ber":  0.001220703125,
+                                                                           "survival_rate":  1.0
+                                                                       },
+                                                        "contrast":  {
+                                                                         "count":  1,
+                                                                         "psnr_sum":  20.340633485981733,
+                                                                         "ssim_sum":  0.9579282612639975,
+                                                                         "nc_sum":  0.9654303789138794,
+                                                                         "ber_sum":  0.00347900390625,
+                                                                         "survived":  1,
+                                                                         "avg_psnr":  20.340633485981733,
+                                                                         "avg_ssim":  0.9579282612639975,
+                                                                         "avg_nc":  0.9654303789138794,
+                                                                         "avg_ber":  0.00347900390625,
+                                                                         "survival_rate":  1.0
+                                                                     },
+                                                        "blur":  {
+                                                                     "count":  1,
+                                                                     "psnr_sum":  11.791812970834743,
+                                                                     "ssim_sum":  0.24614192931328316,
+                                                                     "nc_sum":  0.9448854327201843,
+                                                                     "ber_sum":  0.34967041015625,
+                                                                     "survived":  1,
+                                                                     "avg_psnr":  11.791812970834743,
+                                                                     "avg_ssim":  0.24614192931328316,
+                                                                     "avg_nc":  0.9448854327201843,
+                                                                     "avg_ber":  0.34967041015625,
+                                                                     "survival_rate":  1.0
+                                                                 }
+                                                    }
+                            },
+    "GET /api/download":  {
+                              "http_code":  "200",
+                              "file_downloaded":  true
+                          },
+    "Attacks":  {
+                    "salt_pepper":  {
+                                        "attacked_path":  "./storage/attacked\\attacked_5fd8f314-8a2f-44ed-a609-e2e643742110.png",
+                                        "metrics":  {
+                                                        "nc_after":  0.9639872312545776,
+                                                        "ber_after":  0.00067138671875,
+                                                        "psnr_after":  21.78548926464993,
+                                                        "ssim_after":  0.9614966109323312
+                                                    },
+                                        "survived":  true
+                                    },
+                    "brightness":  {
+                                       "attacked_path":  "./storage/attacked\\attacked_ae395130-d864-4dc5-b8f8-2f5ae409c36c.png",
+                                       "metrics":  {
+                                                       "nc_after":  0.9660578370094299,
+                                                       "ber_after":  0.001220703125,
+                                                       "psnr_after":  17.600862644114137,
+                                                       "ssim_after":  0.9563675594582207
+                                                   },
+                                       "survived":  true
+                                   },
+                    "contrast":  {
+                                     "attacked_path":  "./storage/attacked\\attacked_19879e87-b4e1-42b8-964c-13c30cffe78f.png",
+                                     "metrics":  {
+                                                     "nc_after":  0.9654303789138794,
+                                                     "ber_after":  0.00347900390625,
+                                                     "psnr_after":  20.340633485981733,
+                                                     "ssim_after":  0.9579282612639975
+                                                 },
+                                     "survived":  true
+                                 },
+                    "gaussian_noise":  {
+                                           "attacked_path":  "./storage/attacked\\attacked_8929a3a4-84a4-4bce-a1e2-b77dd930a3d3.png",
+                                           "metrics":  {
+                                                           "nc_after":  0.9637901186943054,
+                                                           "ber_after":  0.0003662109375,
+                                                           "psnr_after":  28.307750517260494,
+                                                           "ssim_after":  0.9910302458640761
+                                                       },
+                                           "survived":  true
+                                       },
+                    "blur":  {
+                                 "attacked_path":  "./storage/attacked\\attacked_52939f8f-b5f2-4106-ab40-b36515f2a955.png",
+                                 "metrics":  {
+                                                 "nc_after":  0.9448854327201843,
+                                                 "ber_after":  0.34967041015625,
+                                                 "psnr_after":  11.791812970834743,
+                                                 "ssim_after":  0.24614192931328316
+                                             },
+                                 "survived":  true
+                             },
+                    "scaling":  {
+                                    "attacked_path":  "./storage/attacked\\attacked_e7ab81a9-59a7-4879-b902-a96a2ab35cb3.png",
+                                    "metrics":  {
+                                                    "nc_after":  0.9622043371200562,
+                                                    "ber_after":  0.00689697265625,
+                                                    "psnr_after":  11.78380494064579,
+                                                    "ssim_after":  0.31007691405046256
+                                                },
+                                    "survived":  true
+                                },
+                    "jpeg":  {
+                                 "attacked_path":  "./storage/attacked\\attacked_824ba0f3-8d23-4ea2-b019-a5014642e652.png",
+                                 "metrics":  {
+                                                 "nc_after":  0.9637161493301392,
+                                                 "ber_after":  0.0006103515625,
+                                                 "psnr_after":  11.833835114181177,
+                                                 "ssim_after":  0.48224976689336224
+                                             },
+                                 "survived":  true
+                             },
+                    "cropping":  {
+                                     "attacked_path":  "./storage/attacked\\attacked_a11c9f30-b96c-4404-8fe5-3ebc645d6eeb.png",
+                                     "metrics":  {
+                                                     "nc_after":  0.9412944316864014,
+                                                     "ber_after":  0.01019287109375,
+                                                     "psnr_after":  9.275081992842898,
+                                                     "ssim_after":  0.6518990556989743
+                                                 },
+                                     "survived":  true
+                                 },
+                    "rotation":  {
+                                     "attacked_path":  "./storage/attacked\\attacked_3aab307e-93ab-4b4d-a5e3-d705af495e28.png",
+                                     "metrics":  {
+                                                     "nc_after":  0.9621885418891907,
+                                                     "ber_after":  0.0003662109375,
+                                                     "psnr_after":  8.41504342430721,
+                                                     "ssim_after":  0.009159464563890348
+                                                 },
+                                     "survived":  true
+                                 }
+                },
+    "POST /api/register":  {
+                               "access_token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiaXNfYWRtaW4iOmZhbHNlLCJleHAiOjE3OTE4MDE4MDN9.Rd_DUOZRx85YonqO2R1pPsv6IY9_IKvumq1zMMVroXk",
+                               "token_type":  "bearer"
+                           },
+    "GET /api/history":  {
+                             "images":  [
+                                            {
+                                                "file_path":  "./storage/uploads\\64fd2517-4e67-4514-9114-8d8f78ffbb6e.png",
+                                                "id":  1,
+                                                "keys_path":  "./storage/keys\\keys_092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc.npz",
+                                                "sha256_hash":  "1e4944d27026851a3c404758ad685e9d927ee969a8a2fd34d7f9444171953f98",
+                                                "owner_name":  "Alice Provenance",
+                                                "prompt_id":  "sd3-gen-987",
+                                                "ssim":  0.9999338462771407,
+                                                "extraction_time":  0.4669318199157715,
+                                                "original_filename":  "test_image.png",
+                                                "watermarked_path":  "./storage/watermarked\\wm_092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc.png",
+                                                "user_id":  1,
+                                                "metadata_encrypted":  "edJotnPDsmWbr34w1oPmZbyIrOOsv6bzhdsUbKgi4sjYaOa1xSk76K6nkptokUa94SZPd6UqrLMhajoRMbNYHQCKrt6eBRPmq8eIBeT85QE158Ph6wlrDEhnt9NjMtYm+j01EiX3uZOTJMInoKJ+Dcq1XEd7e2D850dkc1ED26LoSASyDRbk1MiLABUCXNHDgK6OSymS/2Tox8PDB/SQTNaXXq7BMzy4WK3x58GHH3fPjqXMn1wSqUGvukS1r1YFmV4recWAOKxvD0J04/QudDPd9GPrhxivNO/jFc/6YG+GPiBL0/PlfR0CeJ3+bKwj37vFX0p7Db3Jb0odCe+OwxwbWMj91pM26ig5HRZEj770JANIpwpWiWF1bFytj7THKkm+Q2xWN34KAEw5EaRtnZ75DXQP515HZdFlMplY+GRnH0H5ijhkcTgb7Lc3gi4/LwPcWR5rY9i5FxIcr6UPgZLABsyLJAE4u9wl+f7JIuy5TABp/+ow+SkrYw==",
+                                                "image_uuid":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                "ai_model":  "Stable Diffusion 3",
+                                                "psnr":  48.71518110515289,
+                                                "embedding_time":  0.5113892555236816,
+                                                "created_at":  "2026-10-12T09:43:25"
+                                            }
+                                        ],
+                             "verifications":  [
+                                                   {
+                                                       "image_id":  1,
+                                                       "user_id":  1,
+                                                       "is_tampered":  false,
+                                                       "nc_score":  0.9633240699768066,
+                                                       "extracted_owner":  "Alice Provenance",
+                                                       "extracted_prompt_id":  "sd3-gen-987",
+                                                       "extracted_timestamp":  "2026-10-12T09:43:24.555105+00:00",
+                                                       "id":  1,
+                                                       "is_authentic":  true,
+                                                       "confidence_score":  0.9633240699768066,
+                                                       "ber_score":  0.0003662109375,
+                                                       "extracted_model":  "Stable Diffusion 3",
+                                                       "extracted_image_id":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                       "verified_at":  "2026-10-12T09:43:26"
+                                                   },
+                                                   {
+                                                       "image_id":  1,
+                                                       "user_id":  1,
+                                                       "is_tampered":  false,
+                                                       "nc_score":  0.9642049074172974,
+                                                       "extracted_owner":  "Alice Provenance",
+                                                       "extracted_prompt_id":  "sd3-gen-987",
+                                                       "extracted_timestamp":  "2026-10-12T09:43:24.555105+00:00",
+                                                       "id":  2,
+                                                       "is_authentic":  true,
+                                                       "confidence_score":  0.9642049074172974,
+                                                       "ber_score":  6.103515625E-05,
+                                                       "extracted_model":  "Stable Diffusion 3",
+                                                       "extracted_image_id":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                       "verified_at":  "2026-10-12T09:43:27"
+                                                   }
+                                               ]
+                         },
+    "POST /api/verify":  {
+                             "is_authentic":  true,
+                             "is_tampered":  false,
+                             "confidence_score":  0.9633240699768066,
+                             "nc_score":  0.9633240699768066,
+                             "ber_score":  0.0003662109375,
+                             "provenance":  {
+                                                "owner":  "Alice Provenance",
+                                                "model":  "Stable Diffusion 3",
+                                                "prompt_id":  "sd3-gen-987",
+                                                "image_uuid":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                "timestamp":  "2026-10-12T09:43:24.555105+00:00"
+                                            }
+                         },
+    "GET /":  {
+                  "message":  "Welcome to ProvenAI API",
+                  "docs":  "/docs"
+              },
+    "GET /api/dashboard":  {
+                               "total_images":  1,
+                               "total_verified":  2,
+                               "tampered_images":  0,
+                               "authentic_images":  2,
+                               "recent_uploads":  [
+                                                      {
+                                                          "file_path":  "./storage/uploads\\64fd2517-4e67-4514-9114-8d8f78ffbb6e.png",
+                                                          "id":  1,
+                                                          "keys_path":  "./storage/keys\\keys_092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc.npz",
+                                                          "sha256_hash":  "1e4944d27026851a3c404758ad685e9d927ee969a8a2fd34d7f9444171953f98",
+                                                          "owner_name":  "Alice Provenance",
+                                                          "prompt_id":  "sd3-gen-987",
+                                                          "ssim":  0.9999338462771407,
+                                                          "extraction_time":  0.4669318199157715,
+                                                          "original_filename":  "test_image.png",
+                                                          "watermarked_path":  "./storage/watermarked\\wm_092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc.png",
+                                                          "user_id":  1,
+                                                          "metadata_encrypted":  "edJotnPDsmWbr34w1oPmZbyIrOOsv6bzhdsUbKgi4sjYaOa1xSk76K6nkptokUa94SZPd6UqrLMhajoRMbNYHQCKrt6eBRPmq8eIBeT85QE158Ph6wlrDEhnt9NjMtYm+j01EiX3uZOTJMInoKJ+Dcq1XEd7e2D850dkc1ED26LoSASyDRbk1MiLABUCXNHDgK6OSymS/2Tox8PDB/SQTNaXXq7BMzy4WK3x58GHH3fPjqXMn1wSqUGvukS1r1YFmV4recWAOKxvD0J04/QudDPd9GPrhxivNO/jFc/6YG+GPiBL0/PlfR0CeJ3+bKwj37vFX0p7Db3Jb0odCe+OwxwbWMj91pM26ig5HRZEj770JANIpwpWiWF1bFytj7THKkm+Q2xWN34KAEw5EaRtnZ75DXQP515HZdFlMplY+GRnH0H5ijhkcTgb7Lc3gi4/LwPcWR5rY9i5FxIcr6UPgZLABsyLJAE4u9wl+f7JIuy5TABp/+ow+SkrYw==",
+                                                          "image_uuid":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                          "ai_model":  "Stable Diffusion 3",
+                                                          "psnr":  48.71518110515289,
+                                                          "embedding_time":  0.5113892555236816,
+                                                          "created_at":  "2026-10-12T09:43:25"
+                                                      }
+                                                  ]
+                           },
+    "GET /api/health":  {
+                            "status":  "ok"
+                        },
+    "POST /api/login":  {
+                            "access_token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiaXNfYWRtaW4iOmZhbHNlLCJleHAiOjE3OTE4MDE4MDN9.Rd_DUOZRx85YonqO2R1pPsv6IY9_IKvumq1zMMVroXk",
+                            "token_type":  "bearer"
+                        },
+    "POST /api/verify (non-watermarked)":  {
+                                               "is_authentic":  true,
+                                               "is_tampered":  false,
+                                               "confidence_score":  0.9642049074172974,
+                                               "nc_score":  0.9642049074172974,
+                                               "ber_score":  6.103515625E-05,
+                                               "provenance":  {
+                                                                  "owner":  "Alice Provenance",
+                                                                  "model":  "Stable Diffusion 3",
+                                                                  "prompt_id":  "sd3-gen-987",
+                                                                  "image_uuid":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                                                                  "timestamp":  "2026-10-12T09:43:24.555105+00:00"
+                                                              }
+                                           },
+    "GET /api/profile":  {
+                             "id":  1,
+                             "username":  "testuser_1876420542",
+                             "email":  "testuser_1876420542@example.com",
+                             "full_name":  "Provenance Tester",
+                             "is_admin":  false
+                         },
+    "POST /api/embed":  {
+                            "image_uuid":  "092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc",
+                            "watermarked_path":  "./storage/watermarked\\wm_092fb12f-5e5b-4fe2-9fe5-0034e59d8cbc.png",
+                            "psnr":  48.71518110515289,
+                            "ssim":  0.9999338462771407,
+                            "embedding_time":  0.5113892555236816
+                        }
+}
